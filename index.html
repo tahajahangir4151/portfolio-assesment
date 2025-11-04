@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/animations.css">
+  </head>
+  <body data-theme="light">
+    <!-- Header Component -->
+    <header class="header" data-component="header">
+      <div class="container">
+        <div class="header-content">
+          <h1 class="logo">Porofolio</h1>
+          <nav class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content animate-on-scroll" data-animation="fade-up">
+          <h2 class="hero-title">
+            Hi, I'm <span class="highlight">Taha Jahangir</span>
+          </h2>
+          <p class="hero-subtitle">
+            Lorem ipsum dolor sit, amet consectetur adipisicing.
+          </p>
+          <p class="hero-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            exercitationem expedita blanditiis!
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="fade-up">
+          About Me
+        </h2>
+        <div class="about-content">
+          <div class="about-text animate-on-scroll" data-animation="fade-right">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Perspiciatis iste dignissimos similique magnam impedit fuga eos.
+              Rerum animi explicabo ut.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              minima cum! Ab corporis repudiandae illum minus repellat?
+            </p>
+          </div>
+          <div class="skills animate-on-scroll" data-animation="fade-left">
+            <h3 class="skills-title">Skills</h3>
+            <div class="skill-bars" data-component="skill-bars">
+              <!-- Skills will be injected here by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="fade-up">
+          Projects
+        </h2>
+        <div class="projects-grid" data-component="projects-grid">
+          <!-- Project cards will be injected here by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="fade-up">
+          Get In Touch
+        </h2>
+        <div class="contact-content animate-on-scroll" data-animation="fade-up">
+          <p class="contact-description">
+            Have a project in mind? Let's work together to create something
+            amazing.
+          </p>
+          <div class="contact-links">
+            <a href="" class="contact-link"
+              >Email</a
+            >
+            <a href="" class="contact-link"
+              >GitHub</a
+            >
+            <a href="" class="contact-link"
+              >LinkedIn</a
+            >
+            <a href="" class="contact-link"
+              >Twitter</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">© 2024 Your Name. Built with vanilla JS.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

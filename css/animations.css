@@ -1,0 +1,83 @@
+.animate-on-scroll {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+.animate-on-scroll.animated {
+  opacity: 1;
+}
+[data-animation="fade-up"] {
+  transform: translateY(30px);
+}
+[data-animation="fade-up"].animated {
+  transform: translateY(0);
+}
+[data-animation="fade-down"] {
+  transform: translateY(-30px);
+}
+[data-animation="fade-down"].animated {
+  transform: translateY(0);
+}
+[data-animation="fade-left"] {
+  transform: translateX(30px);
+}
+[data-animation="fade-left"].animated {
+  transform: translateX(0);
+}
+[data-animation="fade-right"] {
+  transform: translateX(-30px);
+}
+[data-animation="fade-right"].animated {
+  transform: translateX(0);
+}
+[data-animation="scale"] {
+  transform: scale(0.9);
+}
+[data-animation="scale"].animated {
+  transform: scale(1);
+}
+[data-animation="rotate"] {
+  transform: rotate(-5deg);
+}
+[data-animation="rotate"].animated {
+  transform: rotate(0);
+}
+.animate-on-scroll.animated[data-delay="1"] {
+  transition-delay: 0.1s;
+}
+.animate-on-scroll.animated[data-delay="2"] {
+  transition-delay: 0.2s;
+}
+.animate-on-scroll.animated[data-delay="3"] {
+  transition-delay: 0.3s;
+}
+.animate-on-scroll.animated[data-delay="4"] {
+  transition-delay: 0.4s;
+}
+.animate-on-scroll.animated[data-delay="5"] {
+  transition-delay: 0.5s;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.theme-toggle.pulse {
+  animation: pulse 0.5s ease-in-out;
+}
+body {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
